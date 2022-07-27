@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Layout from './Layout'
 
 import Home from './Home';
 import Contact from './Contact';
@@ -8,10 +10,16 @@ import About from './About';
 function App() {
   return (
     <div className="App">
-      <h1>Jerod Thompson-Springer</h1>
-      <Home />
-      <Contact />
-      <About />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route path="home" element={<Home/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="about" element={<About/>}/>
+        </Route>
+      </Routes>
+      </BrowserRouter>
+    
 
     
     </div>

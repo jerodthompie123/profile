@@ -1,6 +1,6 @@
 import React  from 'react';
 
-function Home(){
+const Home=()=>{
     return(
         <h2> Welcome to my Page</h2>
     )
