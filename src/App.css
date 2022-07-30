@@ -2,7 +2,10 @@
   background-color:lightskyblue;
   ;
 }
-
+ body{
+  background-image: url("Images/sciencepic.jpg");
+  background-color:azure;
+ }
 
 nav ul {
   display:flex;
@@ -18,7 +21,8 @@ ul li {
 }
 
 #div-header{
-  background-color: black;
+  padding:10px;
+  background-color:black;
 }
 
 ul{
@@ -46,8 +50,6 @@ p, h2{
 }
 
 #img-div {
-  
-  background-image: url("sciencepic.jpg");
-  background-color:lightskyblue;
+  padding:10px 50px;
 
 }

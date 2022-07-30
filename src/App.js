@@ -10,23 +10,31 @@ import About from './About';
 function App() {
   return (
     <div>
+      <head>
+        <title>Jerod's page</title>
+      </head>
+      <body>
       <div id="div-header">
       <header><h1>Jerod Thompson-Springer</h1></header>
       </div>
-      <div className="App">
-        <BrowserRouter>
-        <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route path="home" element={<Home/>}/>
-          <Route path="contact" element={<Contact/>}/>
-          <Route path="about" element={<About/>}/>
-        </Route>
-      </Routes>
-      </BrowserRouter>
+      <div>
+        <div id="img-div" >
+          <img src="profilepic.jpg"  id="profile-image" alt="Other"/>
+        </div>
+        <div className="App">
+          <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout/>}>
+              <Route path="home" element={<Home/>}/>
+              <Route path="contact" element={<Contact/>}/>
+              <Route path="about" element={<About/>}/>
+            </Route>
+          </Routes>
+          </BrowserRouter>
+        </div>
       </div>
-      <div id="img-div" >
-        <img src="profilepic.jpg"  id="profile-image" alt="Other"/>
-      </div>
+      
+      </body>
     </div>
   );
 }
